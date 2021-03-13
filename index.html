@@ -16,13 +16,16 @@
       src="https://kit.fontawesome.com/f6fef75e93.js"
       crossorigin="anonymous"
     ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Spartan:wght@300&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
   </head>
   <body>
     <div class="container">
       <div class ="wrapper">
       <div id="search-btn" class="row">
-        <div class="col-7">
+        <div class="col-10">
           <input
             type="search"
             placeholder="Type a city.."
@@ -31,11 +34,12 @@
             autocomplete="off"
           />
         </div>
-        <div class="col-5">
+        <div class="col-2">
           <div
             class="btn-group"
             role="group"
             aria-label="Basic outlined example"
+            id="btns"
           >
             <button type="button" class="btn btn-outline-primary">
               <i class="fas fa-search"></i>
@@ -46,34 +50,56 @@
           </div>
         </div>
       </div>
-      <div id="date-location" class="row">
+      <div id="right-side" class="row">
         <div class="col-6">
-          <h2>San Francisco, CA</h2>
+          <h3 id="city"></h3>
+            <strong id="temperature"></strong>
+          <span class ="units">
+            <a href="#" id="fahrenheit-link">°F</a> |
+             <a href="#" id="celsius-link" class="active">°C</a> 
+            </span>
+                <h5 id="description">Clear</h5>          
         </div>
-        <div class="col-6">
+        <div id = "left-side" class="col-6">
           <ul>
-            <li>March 12, 2021</li>
-            <li>8:03AM</li>
+            <li id="date">March 12, 2021</li>
+            <li id="time">8:03AM</li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li id="lowercase">Wind: <span id="wind"></span>mph</li>
           </ul>
         </div>
       </div>
-
-      <div id="weather" class="row">
-        <div class="col-6">
+      <div id = "forecast" class="row">
+        <div class ="col-3">
           <ul>
-            <li>
-              <strong>55°F</strong>
-            </li>
+            <li><strong>Monday</strong></li>
+         <li>50 °F</li>
+          <li>Clear</li>
+        </ul>
+        </div>
+       <div class ="col-3">
+        <ul>
+          <li><strong>Tuesday</strong></li>
+       <li>49 °F</li>
+        <li>Clear</li>
+      </ul>
+          </div>
+          <div class ="col-3">
+            <ul>
+              <li><strong>Wednesday</strong></li>
+           <li>52 °F</li>
             <li>Clear</li>
           </ul>
-        </div>
-        <div id="conditions" class="col-6">
-          <ul>
-            <li>Humidity</li>
-            <li>Wind</li>
+          </div>
+          <div class ="col-3">
+            <ul>
+              <li><strong>Thursday</strong></li>
+           <li>55 °F</li>
+            <li>Clear</li>
           </ul>
-        </div>
+          </div>
       </div>
+      
     </div>
 
     <script src="src/app.js"></script>
