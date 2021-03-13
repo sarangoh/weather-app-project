@@ -18,6 +18,10 @@ li {
   margin: 0;
   padding: 0;
 }
+.units {
+  font-size: 15px;
+}
+
 #search-btn {
   margin-left: 0 auto;
   padding: 10px;
@@ -40,8 +44,9 @@ li {
   text-align: center;
   font-size: 20px;
 }
-.units {
-  font-size: 15px;
+
+#lowercase {
+  text-transform: lowercase;
 }
 
 #celsius-link {
@@ -58,7 +63,4 @@ li {
 }
 #fahrenheit-link:hover {
   text-decoration: underline;
-}
-#lowercase {
-  text-transform: lowercase;
 }
