@@ -24,7 +24,8 @@
   <body>
     <div class="container">
       <div class ="wrapper">
-      <div id="search-btn" class="row">
+      <form class = "changecities" id ="search-form">
+        <div id="search-btn" class="row">
         <div class="col-10">
           <input
             type="search"
@@ -41,7 +42,7 @@
             aria-label="Basic outlined example"
             id="btns"
           >
-            <button type="button" class="btn btn-outline-primary">
+            <button type="submit" value = "search"class="btn btn-outline-primary">
               <i class="fas fa-search"></i>
             </button>
             <button type="button" class="btn btn-outline-primary">
@@ -50,10 +51,11 @@
           </div>
         </div>
       </div>
+    </form>
       <div id="right-side" class="row">
         <div class="col-6">
           <h3 id="city"></h3>
-          <img src= "" alt ="clear" id ="icon" class= "float-left"/>
+          <img src= "" alt ="" id ="icon" class= "float-left"/>
             <strong id="temperature"></strong>
           <span class ="units">
             <a href="#" id="fahrenheit-link">°F</a> |
