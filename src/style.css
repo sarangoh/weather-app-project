@@ -1,11 +1,7 @@
-.weather-app {
-  margin: 0 auto;
-  text-align: center;
-}
 .wrapper {
   max-width: 600px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 10px;
   color: #787d80;
   border: 1px solid;
   border-radius: 10px;
@@ -13,7 +9,7 @@
   background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
   font-family: "Montserrat Alternates", sans-serif;
 }
-. ul {
+ul {
   margin: 0;
   padding: 0;
 }
@@ -49,7 +45,8 @@ li {
 }
 
 #right-side {
-  padding: 10px;
+  margin: 5px;
+  padding: 20px;
   font-size: 25px;
   text-transform: capitalize;
 }
@@ -72,4 +69,9 @@ li {
 
 #lowercase {
   text-transform: lowercase;
+}
+
+#open-source {
+  font-size: 15px;
+  text-align: center;
 }
